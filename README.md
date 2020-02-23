@@ -4,6 +4,12 @@ I ended up contributing directly to jikanpy instead of using this, leaving this 
 
 Initially, the usecase was to use this to wrap `jikanpy` calls with logs/ratelimits/get metadata about the request.
 
+One could create custom 'extension' classes for jikanpy and then add pre/post hooks to function calls by wrapping `Jikanpy` in `JikanExt`:
+
+`
+JikanExt(extensions=Logger, RateLimit, Retry)
+`
+
 ### jikanpy_ext
 
 #### Installation
